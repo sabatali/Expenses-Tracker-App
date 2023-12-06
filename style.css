@@ -1,0 +1,265 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  line-height: 0;
+}
+
+i{
+  font-size: 15px;
+}
+
+a{
+  color: #000;
+  text-decoration: none;
+}
+
+.top_bar {
+  background-color: #fff;
+  padding: 20px 20px;
+  box-shadow: 0 4px 20px 0 rgba(0,0,0,.14),0 7px 10px -5px rgba(64,64,64,.4);
+  display: flex;
+  justify-content: space-between;
+  margin: 36px 52px 0px 52px;
+  border-radius: 0.75rem;
+}
+
+.right_container {
+  width: 16%;
+  height: 100vh;
+  background-color: #fff;
+  box-shadow: 0 4px 20px 0 rgba(0,0,0,.14), 0 7px 10px -5px rgba(64,64,64,.4);
+  position: fixed;
+  float: left;
+}
+
+.menu{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+ul{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 50px;
+}
+
+ul>li{
+  display: flex;
+  gap: 15px;
+}
+
+.left_container {
+  width: 84%;
+  background-color: transparent;
+  float: right;
+}
+
+.cards_section {
+  display: flex;
+  margin: 90px 50px;
+  justify-content: space-between;
+}
+
+.card {
+  width: 220px;
+  height: 150px;
+  background-color: #fff;
+  box-shadow: 0 4px 20px 0 rgba(0,0,0,.14),0 7px 10px -5px rgba(64,64,64,.4);
+  border-radius: 0.75rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  align-items: center;
+}
+
+.card_icon {
+  color: #fff;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  box-shadow: 0 4px 20px 0 rgba(0,0,0,.14),0 7px 10px -5px rgba(64,64,64,.4);
+  border-radius: 0.75rem;
+  position: relative;
+  top: -60px;
+  left: 6px;
+}
+
+.income_card>.card_icon{
+  background-image: linear-gradient(195deg,#49a3f1,#1a73e8);
+}
+
+.expenses_card>.card_icon{
+  background-image: linear-gradient(195deg,#ec407a,#d81b60);
+}
+
+.balance_card>.card_icon{
+  background-image: linear-gradient(195deg,#66bb6a,#43a047);
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.button{
+  background-color: #43a047;
+}
+
+.button:hover{
+  background-color: #3f8b43;
+}
+
+
+button {
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #eb0c04;
+}
+
+#expenseList {
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+#total {
+  font-weight: bold;
+}
+
+
+.tables{
+  background-color: #fff;
+  box-shadow: 0 4px 20px 0 rgba(0,0,0,.14),0 7px 10px -5px rgba(64,64,64,.4);
+  border-radius: 0.75rem;
+  margin: 52px;
+  padding: 20px;
+}
+
+
+/*  Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.date-column {
+  width: 20%; 
+}
+
+.details-column {
+  width: 50%; 
+}
+
+.amount-column {
+  width: 20%; 
+}
+
+.action-column {
+  width: 10%; 
+}
+
+
+footer {
+  background-color: #f4f4f4;
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #333;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Style for Popup Form */
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border: 1px solid #ccc;
+  background: #fff;
+  z-index: 1000;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
